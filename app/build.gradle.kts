@@ -28,11 +28,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
@@ -59,6 +59,8 @@ dependencies {
 }
 
 tasks.register("uploadToTelegramForInternalTesting") {
+    group = "Custom"
+    description = "Uploads the build to Telegram for internal testing"
     doLast {
         println("Upload to Telegram started ...")
         println("Upload to Telegram: SUCCESS!")
@@ -66,6 +68,8 @@ tasks.register("uploadToTelegramForInternalTesting") {
 }
 
 tasks.register("uploadToGooglePlayStore") {
+    group = "Custom"
+    description = "Uploads the build to Google Play Store"
     doLast {
         println("Upload to Google Play started ...")
         println("Upload to Google Play: SUCCESS!")
