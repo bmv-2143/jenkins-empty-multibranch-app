@@ -57,3 +57,17 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 }
+
+tasks.register("uploadToTelegramForInternalTesting") {
+    doLast {
+        println("Upload to Telegram started ...")
+        println("Upload to Telegram: SUCCESS!")
+    }
+}
+
+tasks.register("uploadToGooglePlayStore") {
+    doLast {
+        println("Upload to Google Play started ...")
+        println("Upload to Google Play: SUCCESS!")
+    }
+}
