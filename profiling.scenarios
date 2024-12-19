@@ -1,0 +1,8 @@
+AssembleDebug {
+    title = "assembleDebug Benchmark"
+    tasks = ["assembleDebug"]
+    warm-ups = 2
+    iterations = 5
+    cleanup-tasks = ["clean"]
+    jvm-args = ["-Xmx4g", "-XX:+UseParallelGC"]
+}
