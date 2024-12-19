@@ -76,3 +76,5 @@ lint/tmp/
 
 # Android Profiling
 *.hprof
+/gradle-user-home/
+/profile-out-3/
